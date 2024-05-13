@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow-y: auto;
+  padding-top: 70px;
+}
+
+
+
+.navbar {
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Updated z-index value to keep the navbar above the cards */
+}
+
+
+/* Custom style for the navbar */
+/* Custom style for the navbar */
+/* Custom style for the navbar */
+.neon-border {
+  box-shadow: 0 0 10px 5px #ffffff; /* White glow effect */
+}
+
+/* Custom style for the login button */
+.logout-button {
+  padding: 10px 20px;
+  border: 2px solid skyblue; /* Sky blue border */
+  background-color: transparent; /* Transparent background */
+  color: skyblue; /* Sky blue text */
+  font-family: 'Arial', sans-serif; /* Arial font */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease;
+  outline: none; /* Remove default outline */
+  border-radius: 15px; /* Curved border */
+}
+
+.logout-button:hover {
+  background-color: skyblue; /* Sky blue background on hover */
+  color: #000; /* Black text on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: none; /* No box-shadow on hover */
+}
+
+.logout-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+
+.container {
+  margin-top: 70px; /* Adjust this value to match the navbar height */
+}
+
+.card-img-top {
+  height: 200px; /* Adjust this value to your desired image height */
+  object-fit: cover; /* Maintain aspect ratio while filling the space */
+}
+
+.card-title {
+  height: 50px; /* Adjust this value to your desired title height */
+  overflow: hidden; /* Hide overflow text if the title exceeds the specified height */
+}
+
+/* Hover effect for the cards */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+}
+
+/* Style for the card title */
+.card-title {
+  color: #000; /* Set your desired text color */
+  text-decoration: none; /* Remove the underline */
+}
+

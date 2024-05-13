@@ -1,0 +1,278 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow-y: auto;
+    padding-top: 100px;
+  }
+  
+
+
+  .navbar {
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Updated z-index value to keep the navbar above the cards */
+}
+
+
+/* Custom style for the navbar */
+/* Custom style for the navbar */
+/* Custom style for the navbar */
+.neon-border {
+    box-shadow: 0 0 10px 5px #ffffff; /* White glow effect */
+}
+
+/* Custom style for the login button */
+.logout-button {
+    padding: 10px 20px;
+    border: 2px solid skyblue; /* Sky blue border */
+    background-color: transparent; /* Transparent background */
+    color: skyblue; /* Sky blue text */
+    font-family: 'Arial', sans-serif; /* Arial font */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease;
+    outline: none; /* Remove default outline */
+    border-radius: 15px; /* Curved border */
+}
+
+.logout-button:hover {
+    background-color: skyblue; /* Sky blue background on hover */
+    color: #000; /* Black text on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: none; /* No box-shadow on hover */
+}
+
+.logout-button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Style for the image */
+.cover-image {
+    width: 95%; /* Set the width to cover 95% of the page */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+    display: block; /* Ensure it's displayed as a block element */
+    margin: 0 auto 50px; /* Center the image horizontally */
+}
+
+/* Existing styles above */
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-section {
+    width: 95%;
+    max-width: 100%;
+    margin: 20px auto; /* Adjust margin as needed */
+}
+
+/* Table background and text styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background for the table */
+}
+
+/* Table header styles */
+.table th {
+    background-color: #fffdfd; /* Black background for table headers */
+    color: #000000; /* White text color for table headers */
+    padding: 8px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+/* Table cell (data) styles */
+.table td {
+    padding: 8px;
+    border: 2px solid #000; /* Black border for table cells */
+    color: #000; /* Black text color for table cells */
+}
+
+.table input[type="text"] {
+    border: none; /* Remove border for text input fields */
+    outline: none; /* Remove default outline */
+}
+
+
+
+/* Style for the second form */
+#newForm {
+    width: 50%;
+    height: 70%;
+    background-color: #0f0f0f; /* Dark background color */
+    color: #00ff00; /* Neon green text color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    position:absolute;
+    border: 2px solid #00ff00;
+    /* Other necessary styles */
+  }
+  
+  /* Close button for the second form */
+  #closeNewFormBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: #00ff00; /* Color similar to ChatGPT */
+  }
+  
+  /* Text and input color */
+  #newForm h2,
+  #newForm label,
+  #newForm input[type="text"] {
+    color: #333; /* Text color similar to ChatGPT */
+  }
+  
+  
+  /* Button styles */
+  #squareButton1 {
+    position: absolute;
+    bottom: 8%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    background-color: #333; /* Set background color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #squareButton2 {
+    position: absolute;
+    bottom: 0.5%;
+    right: 0%;
+    transform: translate(0%, 0%);
+    padding: 10px 30px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #333; /* Set background color */
+    height: 185px;
+  }
+  
+  
+  /* Style for circular buttons */
+  #cb1,
+  #cb2,
+  #cb3,
+  #cb4,
+  #cb5 {
+    cursor: pointer;
+    border-radius: 50%; /* Make the buttons circular */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    margin: 5px; /* Add margin for spacing */
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    position: absolute;
+    bottom: 33%;
+    border: 2px solid #00ff00;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #cb1 {
+    left: 200px; /* Adjust the left position */
+  }
+  
+  #cb2 {
+    left: 250px; /* Adjust the left position */
+  }
+  
+  #cb3 {
+    left: 300px; /* Adjust the left position */
+  }
+  
+  #cb4 {
+    left: 350px; /* Adjust the left position */
+  }
+  
+  #cb5 {
+    left: 400px; /* Adjust the left position */
+  }
+  
+  .sft{
+      width: 100%;
+      border: 2px solid #00ff00;
+      bottom: 10px;  
+  }
+  input[class="sft"] {
+    position: absolute;
+    bottom: 0%;
+  }
+  
+  .sft2{
+      width: 100%;
+      border: 2px solid #00ff00;
+      bottom: 10px; 
+  }
+  input[class="sft2"] {
+    position: absolute;
+    bottom: 20%;
+  }
+
+  .sft3{
+    width: 100%;
+    border: 2px solid #00ff00;
+    bottom: 10px;
+    height: 280px;
+}
+input[class="sft3"] {
+  position: absolute;
+  bottom: 38%;
+}
+
+ /* Text and input color */
+#newForm .form-content.fieldName {
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#newForm .form-content.field2 {
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the input fields */
+#newForm input[type="text"] {
+    flex: 1; /* Fill remaining space */
+    padding: 30px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    background-color: #333; /* Set background color */
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box; /* Include padding and border in width */
+    margin-right: 0; /* Add some space between inputs */
+}
+
+/* Ensure last input doesn't have unnecessary margin */
+#newForm input[type="text"]:last-child {
+    margin-right: 0;
+}

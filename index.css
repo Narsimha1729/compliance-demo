@@ -1,0 +1,532 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+  }
+  
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: rotate(-45deg);
+  }
+  
+  .star {
+    --star-color: var(--primary-color);
+    --star-tail-length: 6em;
+    --star-tail-height: 2px;
+    --star-width: calc(var(--star-tail-length) / 6);
+    --fall-duration: 9s;
+    --tail-fade-duration: var(--fall-duration);
+    position: absolute;
+    top: var(--top-offset);
+    left: 0;
+    width: var(--star-tail-length);
+    height: var(--star-tail-height);
+    color: var(--star-color);
+    background: linear-gradient(45deg, currentColor, transparent);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 6px currentColor);
+    transform: translate3d(104em, 0, 0);
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+  }
+  @media screen and (max-width: 750px) {
+    .star {
+      animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+    }
+  }
+  .star:nth-child(1) {
+    --star-tail-length: 7.11em;
+    --top-offset: 57.58vh;
+    --fall-duration: 8.771s;
+    --fall-delay: 3.86s;
+  }
+  .star:nth-child(2) {
+    --star-tail-length: 7.04em;
+    --top-offset: 30.23vh;
+    --fall-duration: 11.792s;
+    --fall-delay: 8.629s;
+  }
+  .star:nth-child(3) {
+    --star-tail-length: 5.81em;
+    --top-offset: 14vh;
+    --fall-duration: 6.105s;
+    --fall-delay: 4.699s;
+  }
+  .star:nth-child(4) {
+    --star-tail-length: 7.23em;
+    --top-offset: 90.25vh;
+    --fall-duration: 7.85s;
+    --fall-delay: 4.675s;
+  }
+  .star:nth-child(5) {
+    --star-tail-length: 5.59em;
+    --top-offset: 2.01vh;
+    --fall-duration: 6.827s;
+    --fall-delay: 5.107s;
+  }
+  .star:nth-child(6) {
+    --star-tail-length: 5.01em;
+    --top-offset: 1.54vh;
+    --fall-duration: 8.185s;
+    --fall-delay: 9.439s;
+  }
+  .star:nth-child(7) {
+    --star-tail-length: 6.64em;
+    --top-offset: 80.3vh;
+    --fall-duration: 6.279s;
+    --fall-delay: 3.958s;
+  }
+  .star:nth-child(8) {
+    --star-tail-length: 6.72em;
+    --top-offset: 25.63vh;
+    --fall-duration: 9.098s;
+    --fall-delay: 4.947s;
+  }
+  .star:nth-child(9) {
+    --star-tail-length: 6.72em;
+    --top-offset: 47.42vh;
+    --fall-duration: 7.211s;
+    --fall-delay: 6.862s;
+  }
+  .star:nth-child(10) {
+    --star-tail-length: 5.4em;
+    --top-offset: 85.95vh;
+    --fall-duration: 7.25s;
+    --fall-delay: 8.812s;
+  }
+  .star:nth-child(11) {
+    --star-tail-length: 6.78em;
+    --top-offset: 41.08vh;
+    --fall-duration: 6.254s;
+    --fall-delay: 0.916s;
+  }
+  .star:nth-child(12) {
+    --star-tail-length: 7.35em;
+    --top-offset: 16.06vh;
+    --fall-duration: 7.999s;
+    --fall-delay: 6.785s;
+  }
+  .star:nth-child(13) {
+    --star-tail-length: 5.66em;
+    --top-offset: 77.06vh;
+    --fall-duration: 11.436s;
+    --fall-delay: 1.528s;
+  }
+  .star:nth-child(14) {
+    --star-tail-length: 6.19em;
+    --top-offset: 1.21vh;
+    --fall-duration: 9.373s;
+    --fall-delay: 4.974s;
+  }
+  .star:nth-child(15) {
+    --star-tail-length: 6.53em;
+    --top-offset: 37.49vh;
+    --fall-duration: 8.983s;
+    --fall-delay: 4.996s;
+  }
+  .star:nth-child(16) {
+    --star-tail-length: 6.85em;
+    --top-offset: 89.72vh;
+    --fall-duration: 11.716s;
+    --fall-delay: 3.471s;
+  }
+  .star:nth-child(17) {
+    --star-tail-length: 5.4em;
+    --top-offset: 52.59vh;
+    --fall-duration: 9.142s;
+    --fall-delay: 8.11s;
+  }
+  .star:nth-child(18) {
+    --star-tail-length: 6.85em;
+    --top-offset: 96.56vh;
+    --fall-duration: 7.8s;
+    --fall-delay: 2.176s;
+  }
+  .star:nth-child(19) {
+    --star-tail-length: 6.9em;
+    --top-offset: 56.38vh;
+    --fall-duration: 6.589s;
+    --fall-delay: 3.224s;
+  }
+  .star:nth-child(20) {
+    --star-tail-length: 7.18em;
+    --top-offset: 74.9vh;
+    --fall-duration: 10.851s;
+    --fall-delay: 0.375s;
+  }
+  .star:nth-child(21) {
+    --star-tail-length: 7.21em;
+    --top-offset: 65.03vh;
+    --fall-duration: 7.079s;
+    --fall-delay: 2.795s;
+  }
+  .star:nth-child(22) {
+    --star-tail-length: 5.07em;
+    --top-offset: 70.53vh;
+    --fall-duration: 10.105s;
+    --fall-delay: 9.012s;
+  }
+  .star:nth-child(23) {
+    --star-tail-length: 5.12em;
+    --top-offset: 65.57vh;
+    --fall-duration: 9.224s;
+    --fall-delay: 0.877s;
+  }
+  .star:nth-child(24) {
+    --star-tail-length: 7.15em;
+    --top-offset: 22.55vh;
+    --fall-duration: 7.344s;
+    --fall-delay: 4.935s;
+  }
+  .star:nth-child(25) {
+    --star-tail-length: 5.22em;
+    --top-offset: 63.37vh;
+    --fall-duration: 6.91s;
+    --fall-delay: 6.61s;
+  }
+  .star:nth-child(26) {
+    --star-tail-length: 7.32em;
+    --top-offset: 57.22vh;
+    --fall-duration: 7.235s;
+    --fall-delay: 7.303s;
+  }
+  .star:nth-child(27) {
+    --star-tail-length: 5.48em;
+    --top-offset: 82.71vh;
+    --fall-duration: 8.72s;
+    --fall-delay: 4.424s;
+  }
+  .star:nth-child(28) {
+    --star-tail-length: 7.4em;
+    --top-offset: 0.04vh;
+    --fall-duration: 10.96s;
+    --fall-delay: 5.342s;
+  }
+  .star:nth-child(29) {
+    --star-tail-length: 6.86em;
+    --top-offset: 20.63vh;
+    --fall-duration: 11.131s;
+    --fall-delay: 5.287s;
+  }
+  .star:nth-child(30) {
+    --star-tail-length: 6.57em;
+    --top-offset: 15.13vh;
+    --fall-duration: 7.011s;
+    --fall-delay: 9.678s;
+  }
+  .star:nth-child(31) {
+    --star-tail-length: 6.88em;
+    --top-offset: 18.7vh;
+    --fall-duration: 9.761s;
+    --fall-delay: 4.785s;
+  }
+  .star:nth-child(32) {
+    --star-tail-length: 6.4em;
+    --top-offset: 72.83vh;
+    --fall-duration: 6.58s;
+    --fall-delay: 8.634s;
+  }
+  .star:nth-child(33) {
+    --star-tail-length: 6.88em;
+    --top-offset: 28.09vh;
+    --fall-duration: 7.383s;
+    --fall-delay: 6.984s;
+  }
+  .star:nth-child(34) {
+    --star-tail-length: 7.02em;
+    --top-offset: 33.46vh;
+    --fall-duration: 7.212s;
+    --fall-delay: 9.417s;
+  }
+  .star:nth-child(35) {
+    --star-tail-length: 6.2em;
+    --top-offset: 47.04vh;
+    --fall-duration: 6.987s;
+    --fall-delay: 9.701s;
+  }
+  .star:nth-child(36) {
+    --star-tail-length: 6.94em;
+    --top-offset: 85.61vh;
+    --fall-duration: 9.3s;
+    --fall-delay: 7.762s;
+  }
+  .star:nth-child(37) {
+    --star-tail-length: 7.23em;
+    --top-offset: 44.82vh;
+    --fall-duration: 6.46s;
+    --fall-delay: 7.307s;
+  }
+  .star:nth-child(38) {
+    --star-tail-length: 7.08em;
+    --top-offset: 23.22vh;
+    --fall-duration: 7.554s;
+    --fall-delay: 7.541s;
+  }
+  .star:nth-child(39) {
+    --star-tail-length: 6.34em;
+    --top-offset: 72.62vh;
+    --fall-duration: 7.919s;
+    --fall-delay: 5.039s;
+  }
+  .star:nth-child(40) {
+    --star-tail-length: 7.11em;
+    --top-offset: 35.24vh;
+    --fall-duration: 10.834s;
+    --fall-delay: 4.547s;
+  }
+  .star:nth-child(41) {
+    --star-tail-length: 6.44em;
+    --top-offset: 56.39vh;
+    --fall-duration: 6.195s;
+    --fall-delay: 0.981s;
+  }
+  .star:nth-child(42) {
+    --star-tail-length: 5.56em;
+    --top-offset: 48.01vh;
+    --fall-duration: 8.976s;
+    --fall-delay: 0.243s;
+  }
+  .star:nth-child(43) {
+    --star-tail-length: 6.39em;
+    --top-offset: 37.68vh;
+    --fall-duration: 6.503s;
+    --fall-delay: 8.797s;
+  }
+  .star:nth-child(44) {
+    --star-tail-length: 7.02em;
+    --top-offset: 4.34vh;
+    --fall-duration: 11.235s;
+    --fall-delay: 8.19s;
+  }
+  .star:nth-child(45) {
+    --star-tail-length: 6.97em;
+    --top-offset: 41.1vh;
+    --fall-duration: 9.887s;
+    --fall-delay: 3.061s;
+  }
+  .star:nth-child(46) {
+    --star-tail-length: 6.81em;
+    --top-offset: 70.84vh;
+    --fall-duration: 8.401s;
+    --fall-delay: 1.912s;
+  }
+  .star:nth-child(47) {
+    --star-tail-length: 6.46em;
+    --top-offset: 59.05vh;
+    --fall-duration: 6.92s;
+    --fall-delay: 3.494s;
+  }
+  .star:nth-child(48) {
+    --star-tail-length: 5.12em;
+    --top-offset: 0.82vh;
+    --fall-duration: 8.961s;
+    --fall-delay: 4.188s;
+  }
+  .star:nth-child(49) {
+    --star-tail-length: 6.49em;
+    --top-offset: 8.19vh;
+    --fall-duration: 10.488s;
+    --fall-delay: 4.404s;
+  }
+  .star:nth-child(50) {
+    --star-tail-length: 6.35em;
+    --top-offset: 36.66vh;
+    --fall-duration: 7.762s;
+    --fall-delay: 3.896s;
+  }
+  .star::before, .star::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: calc(var(--star-width) / -2);
+    width: var(--star-width);
+    height: 100%;
+    background: linear-gradient(45deg, transparent, currentColor, transparent);
+    border-radius: inherit;
+    animation: blink 2s linear infinite;
+  }
+  .star::before {
+    transform: rotate(45deg);
+  }
+  .star::after {
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translate3d(-30em, 0, 0);
+    }
+  }
+  @keyframes tail-fade {
+    0%, 50% {
+      width: var(--star-tail-length);
+      opacity: 1;
+    }
+    70%, 80% {
+      width: 0;
+      opacity: 0.4;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other elements */
+  }
+
+/* Custom style for the navbar */
+/* Custom style for the navbar */
+/* Custom style for the navbar */
+.neon-border {
+    box-shadow: 0 0 10px 5px #ffffff; /* White glow effect */
+}
+
+/* Custom style for the login button */
+.login-button {
+    padding: 10px 20px;
+    border: 2px solid skyblue; /* Sky blue border */
+    background-color: transparent; /* Transparent background */
+    color: skyblue; /* Sky blue text */
+    font-family: 'Arial', sans-serif; /* Arial font */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease;
+    outline: none; /* Remove default outline */
+    border-radius: 15px; /* Curved border */
+}
+
+.login-button:hover {
+    background-color: skyblue; /* Sky blue background on hover */
+    color: #000; /* Black text on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: none; /* No box-shadow on hover */
+}
+
+.login-button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+
+/* Your existing styles */
+
+/* Custom style for the comply text */
+.comply-text {
+    font-size: 4rem; /* Large font size */
+    font-weight: 700; /* Bold text */
+    font-family: 'Rubik', sans-serif; /* Use Rubik font */
+    color: #000; /* Black solid text color */
+    text-transform: uppercase; /* Uppercase text */
+    text-shadow: 0 0 3px #ffffff, 0 0 6px #ffffff, 0 0 9px #ffffff, 0 0 12px #ffffff, 0 0 21px #ffffff, 0 0 24px #ffffff, 0 0 30px #ffffff, 0 0 45px #ffffff; /* Neon border effect with reduced intensity */
+    -webkit-background-clip: text; /* Clip text to background */
+    background-clip: text; /* Clip text to background */
+    position: relative; /* Positioning for the text */
+    z-index: 1; /* Ensure text is on top of the shadow */
+    font-style: italic; /* Apply italic style */
+    letter-spacing: 2px; /* Adjust letter spacing for a stylish look */
+}
+
+body {
+    background-color: #000; /* Set a background color for better visibility */
+}
+
+/* Your existing styles */
+
+/* Custom style for the login card */
+.login-card {
+    display: none; /* Initially hide the card */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure it's above other elements */
+}
+
+/* Style for the login button */
+.login-btn {
+    font-family: 'Rubik', sans-serif; /* Use Rubik font */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: skyblue;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: dodgerblue;
+}
+
+body {
+    background-color: #000; /* Set a background color for better visibility */
+}
+
+
+
+/* Custom style for the login card */
+.login-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Set background to transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Neon white border */
+}
+
+
+/* Styling for input fields */
+.input-group-text {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.form-control {
+    border: 1px solid #fff;
+}
+
+.btn-primary {
+    background-color: skyblue;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: dodgerblue;
+}
+
+body {
+    background-color: #000; /* Set a background color for better visibility */
+}
+
+.welcome-text {
+    color: #fff; /* Text color */
+    font-family: 'Rubik', sans-serif; /* Use Rubik font */
+    margin-bottom: 20px; /* Adjust spacing */
+}

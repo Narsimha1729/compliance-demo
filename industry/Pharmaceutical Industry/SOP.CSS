@@ -1,0 +1,75 @@
+/* Reset default margins for a clean starting point */
+* {
+    margin: 0;
+  }
+  /* Style the menu button anchor tag */
+.menu-button {
+    background-color: #4CAF50; /* Green color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow for inline styling */
+    font-size: 16px;
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  /* Style the button on hover (optional) */
+  .menu-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%; /* Tables will fill available width */
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Text box styles */
+  .placeholder {
+    width: 100%; /* Textboxes will fill available width */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+    overflow: hidden; /* Hide overflowing content within textboxes */
+  }
+  
+  /* Page liner styles (optional) */
+  .page-liner h1,
+  .page-liner h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .page-liner {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
